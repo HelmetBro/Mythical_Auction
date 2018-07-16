@@ -1,0 +1,90 @@
+12: HEADER 
+story 
+#weapon 
+#magic 
+#science 
+#common 
+  
+BBREAKING: MASSIVE DRAGON ATTACKS IN NEARBY CASTLE 
+*BREAKING* Kingdom Stonegate is currently under attack from an awoken dragon known as Targaryen. The attacks started at 4-before-sun-dial, with a loud 'roar' breaking windows and glassware. The townsfolk have been working in unison with the militia to fight off this dragon. There have been no other reported attacks. *BREAKING* 
+19 
+11 
+-7 
+-1 
+  
+BREAKING: NECROMANCER ELEANOR RISEN FROM DEAD 
+*BREAKING* Also known as "She Whose Surname Shall Not Be Uttered" has been risen from the dead. The local gravekeep tells that the incident occurred in the middle of the afternoon; an odd time if any for dark magic to be taking place. If you spot a ghostly figure, this writer suggests fleeing and notifying the proper authorities. *BREAKING* 
+8 
+17 
+5 
+-4 
+  
+NEWLY FOUND LOCAL QUARRY SITE DISCOVERED 
+The miners of Jackson's Quarry has discovered a new passageway that may contain precious ores. The men have asked for the assistance of any smithy or metal worker to come and discover some of the ores properties. 
+-4 
+-10 
+3 
+13 
+  
+SCIENTIST AIMS TO FEAR TOWNSFOLK 
+The madman that claimed once that a cannonball falls as fast as a feather has now come with a new and equally ridiculous "discovery". Much to the chagrin of the church, the madman states that the sun in the center of our universe. The church has sent local authorities to apprehend the madman, but he seems to also dabble in magic. 
+-3 
+5 
+-9 
+0 
+  
+PROOF THAT GOD EXISTS? 
+A local Wiseman, much to the delight of the church, has proven that God is very much in our very existence. He states that there are 3 ideas that prove that this is so: 1. God is perfect 2. Existing is perfect 3. (I seem to have lost my notes on this last point. Please make your way to the Wiseman for further clarification). 
+1 
+6 
+-14 
+4 
+  
+IRON FORGING: A NEW WAY TO BLACKSMITHING 
+Gunther, the local blacksmith, has discovered a new way to forge iron to be stronger, yet flexible. He calls it "steel" and says that it will provide farmers and warriors alike, a more comfortable way of tilling their fields or slaying our foes. 
+8 
+-1 
+8 
+7 
+  
+DISCOVERY OF NEW COLOR TERMED 'PURPLE' 
+Royal scholars and chemists have come together to discover a new shade of red that is much like lavender. His Royal Highness has deemed it the name "purple" and this hue is now enjoying a rise in popularity among the nobles. These very nobles are searching for anyone well-versed in chemistry to offer their services in dying their fabrics this new color. 
+-10 
+0 
+15 
+0 
+  
+KNIGHTS ON WHICH HUNT: OUTBREAK OF BLACK MAGIC 
+The Order of the Hawk have recently encountered a camp that is fraught with dark magic. The noble knights have asked that any civilians local to the incident stay away from the area and ask that any warriors willing to fight against the evil power come to their aid. 
+6 
+-18 
+-5 
+-2 
+  
+KING ARTHUR SIEGES INVADER OUTPOST - NEARBY LANDS SECURED 
+Our Lord, King Arthur, has begun his siege on our long-fought rival. He calls upon every Briton to come to his aid. When interviewed, our King had suffered a nearly fatal wound, to which he remarked "Tis' but a scratch". ALL HAIL! 
+-10 
+-5 
+12 
+10 
+  
+SAD FROG BECOMES POPULAR 
+Sources tell of a sad, green frog has been spotted lamenting in a nearby pond. Ironically, even though many people have gone in search of such a frog to laud it with praise, it did nothing to brighten up the amphibian's outlook. 
+-5 
+-3 
+-6 
+0 
+  
+LOCAL WIZARD DISCOVERS A DJINN 
+A wizard has discovered a lamp that summons a powerful djinn. "He was found in a wondrous cavern filled with treasures." the wizard states. When asked for his current relationship with the wizard, the djinn replies "He ain't never had a friend like me." For further information, please direct your questions to the wizards pet monkey. 
+-7 
+7 
+0 
+-7 
+  
+YORKENSHIRE PATHAWAY ISSUES CONSUMABLE RECALL 
+Yorkenshire Pathaway, an esteemed good store, has recalled a batch of pies and potions as they have been infected with insane bison illness. The company has made a formal apology and asks that their customers refrain from consuming their items until further notice. 
+-3 
+-9 
+-2 
+-20 

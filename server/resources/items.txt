@@ -1,0 +1,1144 @@
+43 [Number of items in whole file. Only use here.]
+------------------------------------------------------------------------
+|ITEM MUST FIT THIS BOX OR LESS (DASHED LINES ARE OK)                  |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+------------------------------------------------------------------------
+PUT THE HISTORY HERE, USE UP ONLY ONE LINE.
+0 1 0 0 [In order, weapon, magic, science, common. If not zero, then its that item. There can be less than 3 zeros]
+1 [1 or 0, if not zero then it has a special effect]
+1 [1 or 0, if not zero then it has a secret effect]
+3 [Can be values 1-6 inclusive: common, uncommon, rare, very rare, exceptionally rare, mythic]
+2 [Condition: 1-time-use, new, fair, worn. 0-3 respectively]
+1 [Age: recent, old, very old, only written in legend. 1-4 inclusive.]
+
+
+            |\                     /)
+          /\_\\__               (_//
+         |   `>\-`     _._       //`)
+          \ /` \\  _.-`:::`-._  //
+           `    \|`    :::    `|/
+                 |     :::     |
+                 |.....:::.....|
+                 |:::::::::::::|
+                 |     :::     |
+                 \     :::     /
+                  \    :::    /
+                   `-. ::: .-'
+                    //`:::`\\
+                   //   '   \\
+                  |/         \\
+
+
+HISTORY: AXE, SWORD AND SHIELD OF DAN, THE ULTIMATE DUELIST. HE WAS KNOWN FOR HIS TURTLE STANCE WHERE HE DUEL WIELDED HIS WEAPONS WHILE BLOCKING WITH THE SHIELD ON HIS BACK.
+1 0 0 0 
+1 [Never wears out, extremely durable.]
+0
+4
+1
+2
+
+
+
+                         _
+                       _\ /_
+                       >_X_< 
+                .---._  /_\  _.---.
+              /`.---._`{/ \}`_.---.`\
+             | /   ___`{\_/}`___   \ |
+             \ \."`*  `"{_}"`  *`"./ /
+              \ \  )\  _\ /_  /(  / /
+               \ *<()( >_X_< )()>* /
+                |._)/._./_\._.\(_.|
+                |() () () () () ()|
+                <<o>><<o>><o>><<o>>
+               `"""""""""""""""""""`
+
+
+
+HISTORY: CROWN OF KING JULIAN, THE MASTER DANCER. MADE OUT OF GOLD AND RUBBER, CONDUCTS ELECTRICITY VERY WELL BUT DOES NOT HARM USER.
+0 0 1 0
+0 
+1 [If struck by an electric effect (magic or lightning of some sort) stores the energy until you headbutt someone]
+4
+2
+2
+
+
+
+
+                             ___
+                            ( ((
+                             ) ))
+    .::.                    / /(
+   'M .-;-.-.-.-.-.-.-.-.-/| ((::::::::::::::::::::::::::::::::::::::::::::::.._
+  (0 ( ( ( ( ( ( ( ( ( ( ( |  ))   -====================================-      _.>
+   `M `-;-`-`-`-`-`-`-`-`-\| ((::::::::::::::::::::::::::::::::::::::::::::::''
+    `::'                    \ \(
+                             ) ))
+                            (_((
+
+
+
+
+
+HISTORY: GREATSWORD CRAFTED BY MY MOM, MADE WITH LOVES AND KISSES
+1 0 0 0
+0
+1 [If in vital danger grants user invulnerability, only happens once]
+2
+1
+1
+
+
+
+
+
+
+                />
+   (           //------------------------------------------------------(
+  (*)OXOXOXOXO(*>                  --------                             \
+   (           \\--------------------------------------------------------)
+                \>
+
+
+
+
+
+
+
+
+HISTORY: YOUR AVERAGE JOE SWORD FOR ANY WARRIOR. THAT IS STRONG. YOU NEED MUSCLE FOR THIS ONE.
+1 0 0 0
+0
+0
+1
+2
+1
+
+
+
+                   (@|
+      ,,           ,)|_____________________________________
+     //\\8@8@8@8@8@8 / _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \
+     \\//8@8@8@8@8@8 \_____________________________________/
+      ``           `)|
+                   (@| 
+                    `
+                   (@|
+      ,,           ,)|_____________________________________
+     //\\8@8@8@8@8@8 / _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \
+     \\//8@8@8@8@8@8 \_____________________________________/
+      ``           `)|
+                   (@| 
+
+
+
+HISTORY: DOUBLE DAGGERS FOR ANY ASSASSINATION. BECAUSE YOU GOT TO HAVE TWO. ONE IS LAME.
+1 0 0 0
+0
+0
+1
+1
+1
+
+
+
+
+                .-"-.
+              .'     '.
+             /    _\_  \
+            :        \/ ;
+            |   \__  /  |
+            :   /  `Y   :
+             \    .--\ /
+              `.     .'
+                `~~~`
+
+
+
+
+
+
+HISTORY: ENCHANTED EMERALD CRAFTED BY THE WIZARD IZARD. HE MADE IT TO GET VENGEANCE ON HIS BULLY. BLOWS UP TARGETS BRAIN IF NAME IS CHANTED THREE TIMES.
+0 1 0 0
+1 [Annihilates selected target]
+0
+6
+0
+3
+
+                     )                     `
+                    /(                    /)
+                   (  \                  / (
+                   ) * )                ( , )
+                    \#/                  \#'
+                  .-"#'-.             .-"#"=,
+               (  |"-.='|            '|"-,-"|
+               )\ |     |  ,        /(|     | /(         ,
+      (       /  )|     | (\       (  \     |( )        ( )
+     /  )     ) . )     |/  (     ( # (     ( , )      /   )
+    ( * (      \#/|     (`# )      `#/|     |`#/      (  '(
+     \#/     .-"#'-.   .-"#'-,   .-"#'-.   .-=#"-;     `#/
+   .-"#'-.   |"=,-"|   |"-.-"|)  1"-.-"|   |"-.-"|   ,-"#"-.
+   |"-.-"|   |  !  |   |     |   |     |   |     !   |"-.-"|
+   |     |   |     |._,|     |   |     |._,|     |   |     |
+   |     |   |     |   |     |   |     |   |     |   |     |
+   '-._,-'   '-._,-'   '-._,-'   '-._,-'   '-._,-"   '-._,-'
+
+HISTORY: SOME CANDLES FOR ANY CANDLIN' YOU NEED TO DO. DARK? NEED TO BURN SOMETHING? EIGHT CANDLES CAN SOLVE THAT PROBLEM.
+0 0 1 1
+0 [lights up dark area or burns something]
+0
+1
+0 [each use uses a candle]
+1
+
+                           '             .           .
+                        o       '   o  .     '   . O
+                     '   .   ' .   _____  '    .      .
+                      .     .   .mMMMMMMMm.  '  o  '   .
+                    '   .     .MMXXXXXXXXXMM.    .   ' 
+                   .       . /XX77:::::::77XX\ .   .   .
+                      o  .  ;X7:::''''''':::7X;   .  '
+                     '    . |::'.:'        '::| .   .  .
+                        .   ;:.:.            :;. o   .
+                     '     . \'.:            /.    '   .
+                        .     `.':.        .'.  '    .
+                      '   . '  .`-._____.-'   .  . '  .
+                       ' o   '  .   O   .   '  o    '
+                        . ' .  ' . '  ' O   . '  '   '
+                         . .   '    '  .  '   . '  '
+                          . .'..' . ' ' . . '.  . '
+                           `.':.'        ':'.'.'
+                             `\\_         _//'
+HISTORY: SHINY BALL THING. WITH DUST AROUND IT.
+0 1 0 0
+0
+1 [Restores all of your hp whenever you take damage. Even if it's 1.]
+2
+0
+1
+
+                       __
+                    __(  )__
+                _.-'_......_`-._
+              ,'.;::;''''''::`-.`.
+             / /:;'' _><||  `':,\ \
+            / /:/ . ,''  ``. , \:\ \
+           : :::   ;.,-  -.;'   ::: :
+           | |:|><: (':,.;') :__|:| |
+           | |:|--:    `'    ;==|:| |
+           : :::   \        /   ;:; ;
+            \ \:\   `..__..'   /:/ /
+             \ \::.   ___    .::/ /
+              `.::::._|/\_..:::;,'
+                 `:.::.`''::.:'   
+            _..--''.--     --.`--.._
+           `._`--...________...--'_,'
+              ``--...______...--''
+
+HISTORY: TRUSTY CLOCK THAT KEEPS TIME. BUILT IN ALARM GUARANTEED TO WAKE YOU UP. NO WARRANTY SO DON'T SMASH IT.
+0 0 1 0
+0
+0
+2
+1
+1
+
+                        .
+                      .'|     .8
+                     .  |    .8:
+                    .   |   .8;:        .8
+                   .    |  .8;;:    |  .8;
+                  .     n .8;;;:    | .8;;;
+                 .      M.8;;;;;:   |,8;;;;;
+                .    .,"n8;;;;;;:   |8;;;;;;
+               .   .',  n;;;;;;;:   M;;;;;;;;
+              .  ,' ,   n;;;;;;;;:  n;;;;;;;;;
+             . ,'  ,    N;;;;;;;;:  n;;;;;;;;;
+            . '   ,     N;;;;;;;;;: N;;;;;;;;;;
+           .,'   .      N;;;;;;;;;: N;;;;;;;;;;
+          ..    ,       N6666666666 N6666666666
+          I    ,        M           M
+         ---nnnnn_______M___________M______mmnnn
+               "-.                          /
+        __________"-_______________________/_________
+HISTORY: TWO MAST BOAT. BRAND SPANKIN NEW. MADE OF THE FINEST MATERIALS. CREW NOT INCLUDED.
+0 0 0 1
+1 [Allows water travel]
+0
+4
+1
+1
+
+                o  .      #
+               . .  .    ##
+                . O o .  ###
+              .  o  .     #
+                o O.      |
+                . o O     |/|
+                ___o_    /,,|
+                | O |   |,,,|
+                |o .|   | ,,|
+                | .o|   | , |
+                |O  |   | , |
+                | .O|   |   |
+              __|o .|__ |   |
+             / . O o  o\|   |
+            /. O .o .O .\   |
+           |^^^^^^^^^^^^^|  |
+           |             |__|_
+            \___________/=====
+HISTORY: POTION AND DYNAMITE. PERFECT COMBO FOR A MAD SCIENTIST. POTION IS EXPLOSIVE TOO.
+1 1 1 0
+1 [Explosives]
+1 [Can drink potion and to gain temporary ability to breathe fire]
+2
+0
+1
+
+                               __              []
+                               ||              []
+                               ||              []
+                            __ ||              []
+                            || ||              []
+                          .-||-||-.            []  /\
+                         _\_______/_===========[]=(-o)
+                          )\_____/(            []  \/
+                         /     ||  \           []
+                        /      ||   \          []
+                       /       ||    \         []
+                      /~~~~~~~~~~~~~~~\        []
+                     /         ::      \       []
+                    (          ::       )      []
+                     `-----------------'       []
+       ( = )             .---'`---.            []
+        | |_            /          \   ________[]____
+    ____| |_|==========(____________)_/______________\
+HISTORY: SCIENCE KIT. FOR BOILING STUFF AND MEASURING THINGS.
+0 0 1 0
+1 [can do science things (tbh idk what that is)]
+0
+3
+1
+1
+
+
+
+
+
+
+
+                     _____     ..,----'""`-._
+                _.--' _   ``--..\_.          `-=._   (\_ _
+   ...______..-'     , >_.-.       \___....-''_   `.--" (O,__,-]
+       ''----.,.--'"`\__,._\\-...______..|__,__\\-..-.____.____<
+
+
+
+
+
+
+
+
+HISTORY: IT'S A FLIPPIN' DRAGON. PRETTY AWESOME MOUNT. IF YOU DON'T THINK SO THEN YOU'RE DUMB. BURNED.
+0 1 0 1
+1 [FLY (and it shoots fireballs!!!)]
+0
+5
+1
+2
+
+
+                                                ,w.
+                                              ,YWMMw  ,M  ,
+                         _.---.._   __..---._.'MMMMMw,wMWmW,
+                    _.-""        """           WW"WMMMMMMMMMb,
+                 .-' __.'                   .'     MMMMW^WMMMM;
+     _,        .'.-'"; `,       /`     .--""      :MMM[==MWMW^;
+  ,mM^"     ,-'.'   /   ;      ;      /   ,       MMMMb_wMW"  @\
+ ,MM:.    .'.-'   .'     ;     `\    ;     `,     MMMMMMMW `"=./`-,
+ WMMm__,-'.'     /      _.\      F"""-+,,   ;_,_.dMMMMMMMM[,_ / `=_}
+ "^MP__.-'    ,-' _.--""   `-,   ;       \  ; ;MMMMMMMMMMW^``; __|
+            /   .'            ; ;         )  )`{  \ `"^W^`,   \  :
+           /  .'             /  (       .'  /     Ww._     `.  `"
+          /  Y,              `,  `-,=,_{   ;      MMMP`""-,  `-._.-,
+         (--, )                `,_ / `) \/"")      ^"      `-, -;"\:
+          `"""                    `"""   `"'                  `---" 
+
+
+HISTORY: LION MOUNT. STRONG FIGHTER, PRETTY FAST, SOFT AND FLUFFY MANE.
+1 0 0 1
+1 [You get to ride a lion. That's some Narnia shit bro.]
+0
+4
+1
+1
+
+
+
+               _------_
+             -~        ~-
+            -     _      -
+           -      |>      -
+           -      |<      -
+            -     |>     -
+             -    ||    -
+              -   ||   -
+               -__||__-
+               |______|
+               <______>
+               <______>
+                  \/
+
+
+
+HISTORY: HAVING LIGHT PROBLEMS? NEED SOME INSPIRATION? HOLD THIS OVER YOUR HEAD.
+0 0 1 0
+1 [Lights up shit]
+0
+1
+0 [runs out of battery...?]
+1
+
+                       .
+                        `:.
+                          `:.
+                  .:'     ,::
+                 .:'      ;:'
+                 ::      ;:'
+                  :    .:'
+                   `.  :.
+          _________________________
+         : _ _ _ _ _ _ _ _ _ _ _ _ :
+     ,---:".".".".".".".".".".".".":
+    : ,'"`::.:.:.:.:.:.:.:.:.:.:.::'
+    `.`.  `:-===-===-===-===-===-:'
+      `.`-._:                   :
+        `-.__`.               ,'
+    ,--------`"`-------------'--------.
+     `"--.__                   __.--"'
+            `""-------------""'
+HISTORY: IS IT TEA? COFFEE? HOT CHOCOL--IT'S TEA.
+0 0 0 1
+1 [keeps you awake?]
+0
+1
+0
+1
+
+
+
+   (\  ` (\ .` .                                                           
+`==. ._ (\ \_\` `-.\__`                                                    
+=_. `    `=  `- `     "`-.                                                 
+==._`-`-._ . `-._  `      `.                                               
+    `  ---. `==. `          `                                              
+---.`-==._  `===.`. .        `-.                                           
+ ----.    --.__`.\   `       ._,`-________                                 
+===. -===._ --.`.  `         __._(________0===============================+
+___..-     `            .--'"                                              
+_.-              ..---"'                                                   
+__..-          .'                                                          
+  .=='       .'                                                            
+          .-'                                                              
+       .-' 
+
+
+HISTORY: FLYING BROOM USED BY WILDA THE WITCH. USE AS MOUNT AT YOUR OWN RISK. MIGHT HAVE MIND OF ITS OWN.
+0 1 0 0
+1 [FLY!]
+1 [chant right phrase and user and broom turn invisible]
+5
+1
+3
+
+
+
+
+                ,"(
+               ////\                           _
+              (//////--,,,,,_____            ,"
+            _;"""----/////_______;,,        //
+__________;"o,-------------......"""""`'-._/(
+      ""'==._.__,;;;;"""           ____,.-.==
+             "-.:______,...;---""/"   "    \(
+                 '-._      `-._("           \\
+                     '-._                    '._
+
+
+
+
+
+
+HISTORY: DEAD SWORDFISH. WAS A TOUGH ONE, PARRIED AND JABBED LIKE NO OTHER. TASTY THOUGH.
+0 0 0 1
+0
+0
+2
+0 [fills up a decent amount of hp and gives a lil fightin boost]
+1 [cmon bro we aint sellin rotten fish]
+
+
+
+
+      __________________
+    .-'  \ _.-''-._ /  '-.
+  .-/\   .'.      .'.   /\-.
+ _'/  \.'   '.  .'   './  \'_
+:======:======::======:======:  
+ '. '.  \     ''     /  .' .'
+   '. .  \   :  :   /  . .'
+     '.'  \  '  '  /  '.'
+       ':  \:    :/  :'
+         '. \    / .'
+           '.\  /.'    
+             '\/'
+
+
+
+HISTORY: GIANT DIAMOND. FOR YOUR GIANT RING IF YOU GOT ONE. OH AND IT GRANTS YOU A WISH.
+0 1 0 0
+1 [Boosts stats significantly or gives you any item in the game]
+0
+6
+0
+4
+
+
+                     @(\/)
+                  (\/)-{}-)@
+                @(={}=)/\)(\/)
+               (\/(/\)@| (-{}-)
+              (={}=)@(\/)@(/\)@
+               (/\)\(={}=)/(\/)
+               @(\/)\(/\)/(={}=)
+               (-{}-)""""@/(/\)
+                (/\)|:   |
+                   /::'   \
+                  /:::     \
+                 |::'       |
+                 |::        |
+                 \::.       /
+                  ':______.'
+                   `""""""`
+
+HISTORY: POT OF FLOWERS THAT SMELL NICE. AND THEY NEVER AGE. BUT KEEP THEM AWAY FROM GOATS.
+0 1 0 1
+0
+0
+3
+1
+3
+
+
+
+,'=====`.
+(_)    \ \
+       /  \
+      (____)  ()
+    ""((""("""||
+      ))) ))  ||
+     (((((((( ||
+     \######/ ||
+      ""||""  ||
+       /  \   ||
+      |    |  ||
+      |====|  ||  
+      (____)__||__
+
+
+
+HISTORY: BUNSEN BURNER WITH BUILT IN FLASK FOR ALL OF YOUR EXPERIMENTATION NEEDS
+0 0 1 0
+1 [identify liquids and what is in solids through chemistry]
+0
+2
+1
+1
+
+
+
+
+			                     ___________
+                                [___________]
+                                 {=========}
+                               .-'         '-.
+                              /               \
+                             /_________________\
+                             |   _  _   _      |
+                             ||\(_ |_)||_)||\ ||
+            ,.--.   ,.--.    ||~\_)|  || \|| \||
+           // \  \ // \  \   |_________________|
+           \\  \ / \\  \ /   |                 |
+            `'--'   `'--'    '-----------------'
+
+
+
+HISTORY: MEDICINE FOR HEADACHES. HIGHLY RECOMMENDED IF YOU HAVE CHILDREN.
+0 0 0 1
+1 [reduces stress, less susceptible to mind attacks...?]
+0
+2
+0 [has more than one use but runs out]
+1
+
+                   ___
+                  /   \
+                 |  o  |
+                  \   /
+           ________) (________
+          |                   |
+          '------.     .------'
+                  |   |
+                  |   |
+       /\         |   |         /\
+      /_ \        /   \        / _\
+        \ '.    .'     '.    .' /
+         \  '--'         '--'  /
+          '.                 .'
+            '._           _.'
+               `'-.   .-'`
+                   \ /
+                    `
+HISTORY: THIS IS NOT FOR A SHIP. YOU SHOULD ALREADY HAVE AN ANCHOR FOR YOUR SHIP. THIS IS A WEAPON. REAL MANLY SAILORS WIELD THIS WITH VIGOR.
+1 0 0 0
+1 [High chance to break bones, pierce someone's body, or knock someone the fuck out]
+0
+3
+1
+2
+
+
+
+
+          __
+          HH
+          HH
+BBB       HH                                        ,z.
+=== .___. HH     %%%%                   .o.       ,zZZZ>
+BBB |   | HH 838 \\\\ EEE    AAAAA     ,0X0'    ,zZZZ"
+BBB |<<<| HH 838 %%%% EEE ## DDDDD    ,0X0'   ,zZZZ"
+BBB | E | HH 838 %GR% +++ ## AAAAA   ,0X0'  ,zZZZ"
+BBB | M | HH 838 %%%% EEE ## <>  ,0X0' ,zZZZ"
+BBB | C | HH 838 %%%% EEE ## AAAAA ,0X0',zZZZ"HH$HHHHHHHDDHH$HH
+=== |<<<| HH 838 //// EEE ## AAAAA.0X0;zZZZ"  EE$EEEEEEEDDEE$EE
+BBB |___| HH 838 %%%% EEE ## AAAAA'"0' "Z"    HH$HHHHHHHDDHH$HH
+
+
+
+HISTORY: LIBRARIES ARE FOR FREE-LOADERS. BUY YOUR OWN BOOKS LIKE A REAL MAN.
+0 1 1 1 
+1 [includes vast information about game, enemies, weapons, map, science, blah blah]
+0
+3
+3 [be careful with em]
+3
+
+              .======.
+              |      |
+              |      |
+     .========'      '========.
+     |                        |
+     |                        |
+     '========.      .========'
+              |      |
+              |      |
+              |      |
+              |      |
+              |      |
+              |      |
+              |      |
+              |      |
+              |      |
+  \\_   _  _\\| \//  |//_   _ \// _
+ ^ `^`^ ^`` `^ ^` ``^^`  `^^` `^ `^
+HISTORY: USED TO BE A GRAVE BUT WAS THEN USED BY HERO HEYZUES TO SLAY THE UNDEAD. CURRENTLY BACK TO BEING USED AS A GRAVE.
+1 1 0 0
+1 [Super effective against the undead]
+0
+4
+1
+3
+
+
+
+
+
+                                _______.
+                     ______    | .   . |\
+                    /     /\   |   .   |.\
+                   /  '  /  \  | .   . |.'|
+                  /_____/. . \ |_______|.'|
+                  \ . . \    /  \ ' .   \'|
+                   \ . . \  /    \____'__\|
+                    \_____\/
+
+
+
+
+
+
+HISTORY: PAIR OF MAGICAL DICE FOR ANY OF YOUR GAMBLING NEEDS. ROLL A 7 OR 3 AND BE BLESSED BY THE GODS. ROLL A 2 AND YOU GET A SMALL NUMBER. ROLL A 9? ...GOOD LUCK.
+0 1 0 0
+1 [Rolling dice can have multiple effects: 7 gives overall stat boost, 3 gives money, 9 reduces stats and continuously throws obstacles toward player]
+1 [Roll a 10 and it makes it rain. Roll a 12 and it makes it windy.]
+5
+2 [They CAN break, be careful yo]
+3
+
+                       .-.
+                      /  .\
+                    .' .  .'.
+                 .-'. .    . '-._
+               .' ..    . . . .  '.
+              /. .    .        .  .\
+             / .  . .     . .. . .  \  "It's a lemon..."
+            |. .  .      .. . . ...  |
+            / . .     .       .  .  .\
+           | .  .          . . . . .  |
+           |. .     .    .. .   .   ..|
+            \  . .        .  . .  . . /
+            |  .  .      .  .  . . . |
+             \. .     .  . .  .. . .'
+              \  ..      .. .   . /
+               ':_ .  .  . ... _.'
+                  '-.. . .  .-'
+                      '._..'
+HISTORY: A GIANT LEMON GROWN BY A WIZARD WHO ALWAYS WANTED TO BE A FARMER. THAT HAS AN ENDLESS SUPPLY OF VITAMIN C. OVERDOSE MAY GIVE SYMPTOMS OF PUCKERED LIPS, UPSET STOMACH, AND MAKE YOUR TEETH HURT.
+0 1 0 1
+1 [Can always be used once a day to increase durability against diseases. If used second time causes a symptom along with small additional durability boost.]
+1 [Can be used for lemonade.]
+3
+1
+1
+
+
+
+
+
+                                       ...----~~~~~~~~--,
+                                  ,:~""                  `.
+             It's a Lute       ,-$                        \\
+   GG\________________________//"              __      _   '|
+   I;H:::::::::::::::::::::::::::::::::::::::&@;;@&::::I   $|
+   I;H::::::::::::::::::::::::::::::::::::::&*!;;!*&:::I   $I
+   I;H:::::::::::::::::::::::::::::::::::::::&@;;@&::::I   $|
+   GG/~~~~~~~~~~~~~~~~~~~~~~~~\\,              ~~      ~   ,|
+                               "-$                        //
+                                 `:..                    ,'
+                                     ""---...________--"
+
+
+
+HISTORY: LUTE THAT PLAYS BEAUTIFUL LUTE MUSIC. GREAT FOR CHARMING THE LADIES. MAKES LONG TRIPS MORE ENJOYABLE. OWNED BY SAM THE WANDERING BARD.
+0 0 0 1
+1 [Can play music]
+0
+3
+2
+3
+
+                         _
+                     _  < >  _  
+                 _  < > | | < >  _
+           /\   < > | | | | | | < >   /\
+           @\\__| |_| |_| |_| |_| |__//@
+             \     _   _   _   _     /  
+             / /| | | | | | | | | |\ \
+            / / | | | | | | | | | | \ \
+           / /  | | | | | | | | | |  \ \
+          / /   | | | | | | | | | |   \ \
+         / /    | | | | | | | | | |    \ \
+        / /     | | | | | | | | | |     \ \
+        | |     | | | | | | | | | |      | |
+        \ \     | | | | | | | | | |     / /
+         \ \    | | | | | | | | | |    / /
+          \ \___| |_| |_| |_| |_| |___/ /
+           \__________        _________/
+                     /________\ 
+HISTORY: HARP THAT PLAYS BEAUTIFUL HARP MUSIC. STOLEN FROM SAM THE WANDERING BARD BY THE WIZARD KAWSBEE WHO WAS LONELY AND WANTED TO CHARM THE LADIES. AFTER MANY FAILED ATTEMPTS IZARD RESORTED TO ENCHANTING IT.
+0 1 0 1
+1 [Plays enchanting music that puts listeners to sleep]
+0
+4
+1
+3
+
+
+
+           
+
+                 |`-._/\_.-`|
+                 |    ||    |
+                 |___o()o___|
+                 |__((<>))__|
+                 \   o\/o   /
+                  \   ||   /
+                   \  ||  /
+                    '.||.'
+                      ``        
+	   
+
+
+
+
+HISTORY: TINY SHIELD OF PROTECTION. IT'S A SHIELD. A TINY ONE. FOR PROTECTING. WHAT DID YOU EXPECT?
+1 0 0 0 
+1 [somewhat more durable, better than standard shield]
+1 
+2
+2
+1
+
+
+
+
+
+
+
+                    .:.^.  *
+          *.    *   .::'.*.>
+            `:.    '':.  |
+              `:.  .::'  |  *
+          *     `:::'    |
+                 `*'     |   
+
+
+
+
+
+
+HISTORY: WAND OF MISTS. DUDE, WE GET IT, YOU VAPE.
+0 1 0 0
+1 [makes a blinding mist against enemies]
+0
+2
+2
+1
+
+
+
+
+
+
+                _______
+               /       /_
+              /       / /
+             /       / /
+            /_______/ /
+           ((______| /
+            `"""""""`
+
+
+
+
+
+
+HISTORY: TOME OF SPELLS. GO CAST YOUR FANCY MAGIC SOMEWHERE ELSE.
+0 1 0 0
+1 [can cast some basic spells]
+1 [using it more makes your spells stronger]
+3
+3
+3
+
+                 4$$-.                                
+                  4   ".                                        
+                  4    ^.                                       
+                  4     $                                       
+                  4     'b                                      
+                  4      "b.                                    
+                  4        $                                                                 
+                  4        $F                                   
+       -$b========4========$b====*P=-                           
+                  4       *$$F                                                                
+                  4       .$F                                   
+                  4       dP                                    
+                  4      F                                      
+                  4     @                                       
+                  4    .                                        
+                  J.  "                                          
+                 '$$     
+
+HISTORY: DRAGON'S GREATBOW. IS THAT A BOW MADE OF DRAGON? THAT'S PRETTY NEAT MAN.
+1 1 0 0
+1 [does more damage with each arrow let free]
+1 [makes dragons more likely to look for you and attack you]
+4
+3
+3
+
+
+
+             ,:\      /:.
+            //  \_()_/  \\
+           ||   |    |   ||
+           ||   |    |   ||
+           ||   |____|   ||
+            \\  / || \  //
+             `:/  ||  \;'
+                  ||
+                  ||
+                  XX
+                  XX
+                  XX
+                  XX
+                  OO
+                  `'
+
+HISTORY: VILGNAR'S AXE. WHAT IS BEST IN LIFE? TO SETTLE DOWN AND HAVE A NICE LIFE IN THE COUNTRYSIDE. AND KILL YOUR ENEMIES.
+1 0 0 0 
+1 [fears your enemies]
+1 [you can hit yourself if you're not careful]
+3 
+2
+1
+
+               |\
+               | \        /|
+               |  \____  / |
+              /|__/AMMA\/  |
+            /AMMMMMMMMMMM\_|
+        ___/AMMMMMMMMMMMMMMA
+        \   |MVKMMM/ .\MMMMM\
+         \__/MMMMMM\  /MMMMMM---
+         |MMMMMMMMMMMMMMMMMM|  /
+         |MMMM/. \MM.--MMMMMM\/
+         /\MMM\  /MM\  |MMMMMM   ___
+        /  |MMMMMMMMM\ |MMMMMM--/   \-.
+       /___/MMMMMMMMMM\|M.--M/___/_|   \
+            \VMM/\MMMMMMM\  |      /\ \/
+             \V/  \MMMMMMM\ |     /_  /
+               |  /MMMV'   \|    |/ _/
+               | /              _/  /
+               |/              /| \'
+HISTORY: FLAIL. A MACE? WITH A CHAIN? THAT'S GENIUS!
+1 0 0 0 
+0
+0
+2
+2
+1
+
+
+
+
+
+
+
+                 |\
+                 | \
+       ()########|  ==========================================================*
+                 | /
+                 |/
+
+
+
+
+
+
+
+HISTORY: FENCING FOIL. JUST THE TIP
+1 0 0 0
+0
+0
+1
+1
+1
+
+
+
+
+
+
+          _,---,_
+        /'_______`\
+       (/'       `\|___________----------"""""""------,
+        \#########||______                          /'
+         ^^^^^^^^^||      """"""-----_____        /'
+                   \                      """--_/'
+
+
+
+
+
+
+
+HISTORY: SABER. MADE FOR ARABIAN KNIGHTS
+1 0 0 0
+0
+0
+1
+1
+1
+
+
+
+
+
+
+       -- /~-__A__-~\ --------------- /~-__A__-~\ --
+         |     H     |               |     H     |
+         |     H     |               |     H     |
+          \_-~~H~~-_/                 \_-~~H~~-_/
+               H                           H
+               H                           H
+               H                           H
+               H                           H
+       ------- U ------------------------- U -------
+
+
+
+
+HISTORY: DUAL AXES. TWICE THE CHOPPING ACTION. TWICE THE FUN.
+1 0 0 0 
+0
+0
+1
+1
+1
+
+
+
+
+             ______________________________    . \  | / .
+            /                            / \     \ \ / /
+           |                            | ==========  - -
+            \____________________________\_/     / / \ \
+         ______________________________      \  | / | \
+        /                            / \     \ \ / /.   .
+       |                            | ==========  - -
+        \____________________________\_/     / / \ \    /
+             ______________________________   / |\  | /  .
+            /                            / \     \ \ / /
+           |                            | ==========  -  - -
+            \____________________________\_/     / / \ \
+                                               .  / | \  .
+
+
+HISTORY: STICKS OF DYNAMITE. BOOM.
+0 0 1 0
+0
+0
+3
+1 [comes in 3s, value decreases after each use]
+1
+
+
+
+
+
+
+
+                      _,--,            _
+                 __,-'____| ___      /' |
+               /'   `\,--,/'   `\  /'   |
+              (       )  (       )'
+               \_   _/'  `\_   _/   
+                 """        """
+
+
+
+
+
+
+HISTORY: MAGIC SPECTACLES. NNNEEEEERRRRD!
+0 1 0 0
+1 [detects magic when worn]
+1 [make npcs more dismissive of you]
+3
+2
+2
+
+
+
+
+
+
+
+                _           _  
+              ,|||.       ,|||.
+              |||||       |||||
+              |||||/)   (\|||||
+              \,,, /     \ ,,,/
+              |___|       |___|
+
+
+
+
+
+
+HISTORY: FISTICUFF GLOVES. COME ON, PUT EM UP!
+1 0 0 0
+1 [unarmed combat against humans boosted]
+0
+2
+2
+2
+
+
+
+
+
+
+                     (O)
+                     <M
+          o          <M
+         /| ......  /:M\---------------------------------------------,,,,,,
+       (O)[]XXXXXX[]I:K+}=====<{H}>=============================------------>
+         \| ^^^^^^  \:W/---------------------------------------------''''''
+          o          <W
+                     <W
+                     (O)
+
+
+
+
+HISTORY: ARONDIGHT. LEGENDARY SWORD OF SIR LANCELOT, BEST FRIEND OF KING ARTHUR AND BETTER FRIEND TO HIS WIFE
+1 1 0 0
+1 [massive holy damage]
+1 [does bonus damage to unholy enemies eg. undead or demons]
+6
+3
+4
+
+
+
+
+
+
+
+
+       ,_._._._._._._._._|____________________________________________________,
+       |_|_|_|_|_|_|_|_|_|___________________________________________________/
+                         !
+
+
+
+
+
+
+
+
+HISTORY: KATANA. STEEL FOLDED OVER A THOUSNAD TIMES OVER, FILTHY GAIJIN
+1 0 0 0
+0
+0
+2
+2
+1
