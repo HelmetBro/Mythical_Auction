@@ -113,6 +113,7 @@ void * thread_work(void * arg){
     //     //send error message to client!
 
     close(response->client_socket);
+    delete response;
     pthread_exit(0);
 }
 
@@ -125,6 +126,7 @@ void accept_client_requests(int server_socket){
     {
         Response * response = new Response();
         response->client_socket = client_socket;
+        response->time_received = std::time(0);
 
         pthread_t p;
         pthread_create(&p, NULL, thread_work, (void *)response);
@@ -134,8 +136,6 @@ void accept_client_requests(int server_socket){
 }
 
 int main(int argc, char *argv[]){
-
-    //http://www.cs.ukzn.ac.za/~hughm/os/notes/ncurses.html
 
     int server_socket = create_server_socket(PORT);
     accept_client_requests(server_socket);

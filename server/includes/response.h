@@ -11,7 +11,11 @@ private:
 
 public:
 
+	const std::string DELIMITER = ";";
 	int client_socket;
+
+	int request_id;
+	std::string request_type;
 	std::string request_data;
 
 	enum REQUESTS {LOGIN};
@@ -20,6 +24,7 @@ public:
 	std::time_t time_sent;
 
 	int handle_request();
+	void print_response();
 
 };
 #endif

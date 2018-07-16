@@ -49,6 +49,6 @@ int LoginRequest::react_response(){
 
 void LoginRequest::print_request(){
 
-	std::cout << "REQUEST >  ID: " << ID << std::endl 
-		<< "        >  data: " << request << std::endl;
+	std::cout << "REQUEST > ID: " << ID << std::endl 
+			  << "        > data: " << request << std::endl;
 }
