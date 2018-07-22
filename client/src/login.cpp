@@ -53,11 +53,11 @@ int Login::get_password(){
 	return l_request.set_password(password);
 }
 
-int Login::authenticate(){
+int Login::authenticate(int server_socket){
 
 	this->l_request.package_request();
 	this->l_request.print_request();
-	this->l_request.send_login_request();
+	this->l_request.send_login_request(server_socket);
 	this->l_request.react_response();
 
 	return 0;

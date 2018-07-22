@@ -51,14 +51,11 @@ int create_server_socket(short port){
     return s;
 }
 
-void get_request_from_socket(Response * response){
-    char data[BUFSIZ];
+void get_request_from_socket(Response * response, char * data){
     int n = read(response->client_socket, data, BUFSIZ);
     if (n < 0)
         std::cout << "SERVER READ ERROR";
     data[n] = '\0';
-
-    response->request_data = data;
 }
 
 // void write_file_to_client_socket(char *file, int socket)
@@ -105,8 +102,12 @@ void get_request_from_socket(Response * response){
 void * thread_work(void * arg){
     Response * response = (Response *) arg;
     
-    get_request_from_socket(response);
+    char data[BUFSIZ];
+    get_request_from_socket(response, data);
 
+    response->interpret(data);
+    response->print_response();
+    response->log_to_database();
     response->handle_request();
 
     // if(!response->handle_request())

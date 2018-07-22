@@ -19,7 +19,7 @@ public:
 
 	int package_request();
 
-	int send_login_request();
+	int send_login_request(int server_socket);
 	int react_response();
 
 	void print_request();

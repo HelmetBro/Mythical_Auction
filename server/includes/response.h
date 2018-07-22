@@ -4,25 +4,29 @@
 #include <string>
 #include <ctime>
 
+#define SIGNATURE_SIZE 1
+
 class Response{
 
 private:
-	const std::string signatures[1] = {"login"};
+	const std::string signatures[SIGNATURE_SIZE] = {"login"};
 
 public:
 
-	const std::string DELIMITER = ";";
+	const char DELIMITER = ';';
 	int client_socket;
 
 	int request_id;
 	std::string request_type;
-	std::string request_data;
 
 	enum REQUESTS {LOGIN};
 
 	std::time_t time_received;
-	std::time_t time_sent;
+	std::string time_request_sent;
+	std::time_t time_response_sent;
 
+	int interpret(char * data);
+	int log_to_database();
 	int handle_request();
 	void print_response();
 

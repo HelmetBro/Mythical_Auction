@@ -4,13 +4,15 @@
 #include <string>
 #include <ctime>
 
+#define SIGNATURE_SIZE 1
+
 class Request{
 
 protected:
 
 	int ID;
-	const std::string DELIMITER = ";";
-	const std::string signatures[1] = {"login"};
+	const char DELIMITER = ';';
+	const std::string signatures[SIGNATURE_SIZE] = {"login"};
 
 	std::time_t time_sent;
 	std::string request;
@@ -21,8 +23,9 @@ public:
 	std::string get_signature(Request::REQUESTS request_type);
 
 	int create_request_id();
-	void set_request_data(std::string data);
-	virtual void print_request() = 0;
 
+	void package_request_header(Request::REQUESTS);
+
+	virtual void print_request() = 0;
 };
 #endif

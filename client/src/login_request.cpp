@@ -1,5 +1,7 @@
-#include <string>
+#include <string.h>
 #include <iostream>
+#include <ctime>
+#include <unistd.h>
 
 #include "login_request.h"
 
@@ -15,31 +17,24 @@ int LoginRequest::set_password(std::string password){
 	return 0; //success
 }
 
+//username, and password
 int LoginRequest::package_request(){
 
-	this->ID = create_request_id();
+	package_request_header(LOGIN);
 
-	//ID number, request type, username, and password
-	
-
-	std::string data;
-	//generate ID number
-
-	data = std::to_string(this->ID);
-	data.append(DELIMITER);
-	data.append(this->get_signature(LOGIN));
-	data.append(DELIMITER);
-	data.append(this->encrypted_username);
-	data.append(DELIMITER);
-	data.append(this->encrypted_password);
-
-	set_request_data(data);
+	this->request.append(this->encrypted_username); //USERNAME
+	this->request.append(&DELIMITER);
+	this->request.append(this->encrypted_password); //PASSWORD
 
 	return 0;
 }
 
-int LoginRequest::send_login_request(){
-	
+int LoginRequest::send_login_request(int server_socket){
+	std::cout << this->request << std::endl;
+	if(write(server_socket, this->request.c_str(), request.length() + 1) < 0)
+            std::cout << "WRITE ERROR FROM CLIENT";
+
+    return 0;
 }
 
 int LoginRequest::react_response(){
@@ -49,6 +44,6 @@ int LoginRequest::react_response(){
 
 void LoginRequest::print_request(){
 
-	std::cout << "REQUEST > ID: " << ID << std::endl 
-			  << "        > data: " << request << std::endl;
+	std::cout << "REQUEST > ID: " << this->ID << std::endl 
+			  << "        > data: " << this->request << std::endl;
 }

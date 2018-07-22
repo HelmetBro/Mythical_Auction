@@ -11,8 +11,6 @@ private:
 
 	LoginRequest l_request;
 
-	
-
 public:
 
 	int establish_connection(const char * const host, short port);
@@ -24,6 +22,6 @@ public:
 	int get_username();
 	int get_password();
 
-	int authenticate();
+	int authenticate(int server_socket);
 };
 #endif

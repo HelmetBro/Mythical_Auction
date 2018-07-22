@@ -11,13 +11,15 @@
 const char * const IP_ADDRESS = "192.168.0.117";
 const short PORT = 51992;
 
+int server_socket;
+
 int login(){
 
 	Login login_activity;
 	login_activity.print_login();
 
 	//connect to server
-	login_activity.establish_connection(IP_ADDRESS, PORT);
+	server_socket = login_activity.establish_connection(IP_ADDRESS, PORT);
 
 	bool verified = false;
 
@@ -29,7 +31,7 @@ int login(){
 		login_activity.print_password_prompt();
 		login_activity.get_password();
 	
-		verified = !login_activity.authenticate();
+		verified = !login_activity.authenticate(server_socket);
 	}
 
 	return 0;
