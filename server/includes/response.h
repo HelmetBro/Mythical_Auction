@@ -25,6 +25,9 @@ public:
 	std::string time_request_sent;
 	std::time_t time_response_sent;
 
+	//helper
+	int find_string_index();
+
 	int interpret(char * data);
 	int log_to_database();
 	int handle_request();
