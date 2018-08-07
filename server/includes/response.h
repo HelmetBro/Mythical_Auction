@@ -10,6 +10,7 @@ class Response{
 
 private:
 	const std::string signatures[SIGNATURE_SIZE] = {"login"};
+	std::string response;
 
 public:
 
@@ -30,7 +31,8 @@ public:
 
 	int interpret(char * data);
 	int log_to_database();
-	int handle_request();
+	int formulate_response();
+	int send_response();
 	void print_response();
 
 };

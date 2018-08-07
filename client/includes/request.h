@@ -16,6 +16,7 @@ protected:
 
 	std::time_t time_sent;
 	std::string request;
+	std::string response;
 
 public:
 
@@ -23,9 +24,13 @@ public:
 	std::string get_signature(Request::REQUESTS request_type);
 
 	int create_request_id();
-
 	void package_request_header(Request::REQUESTS);
 
 	virtual void print_request() = 0;
+
+	int send_request(int server_socket);
+	int receive_response(int server_socket);
+
+	void clear_data();
 };
 #endif

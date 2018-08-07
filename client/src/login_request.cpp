@@ -1,7 +1,5 @@
 #include <string.h>
 #include <iostream>
-#include <ctime>
-#include <unistd.h>
 
 #include "login_request.h"
 
@@ -29,18 +27,21 @@ int LoginRequest::package_request(){
 	return 0;
 }
 
-int LoginRequest::send_login_request(int server_socket){
-	std::cout << this->request << std::endl;
-	if(write(server_socket, this->request.c_str(), request.length() + 1) < 0)
-            std::cout << "WRITE ERROR FROM CLIENT";
-
-    return 0;
-}
-
 int LoginRequest::react_response(){
 	
+	//use ID and response to get the string (authenticate)
+
+	if(this->response == "valid"){
+		return 0; // 0 is VALID
+	}
+
+	//return an error code here! 
 }
 
+void LoginRequest::clear_credentials(){
+	this->encrypted_username.clear();
+	this->encrypted_password.clear();
+}
 
 void LoginRequest::print_request(){
 

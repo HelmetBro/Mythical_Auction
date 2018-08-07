@@ -12,7 +12,7 @@ private:
 
 public:
 
-	static encrypt_string
+	static encrypt_string;
 	static int verify_login(std::string username, std::string password);
 
 

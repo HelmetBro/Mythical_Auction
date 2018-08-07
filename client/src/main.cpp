@@ -25,6 +25,8 @@ int login(){
 
 	while (!verified){
 
+		login_activity.clear();
+
 		login_activity.print_username_prompt();
 		login_activity.get_username();
 	
@@ -32,7 +34,13 @@ int login(){
 		login_activity.get_password();
 	
 		verified = !login_activity.authenticate(server_socket);
+
+		if(!verified)
+			std::cout << "WRONG!" << std::endl; //print better error sometime
 	}
+
+
+	std::cout << "WE IN BOYS!" << std::endl;
 
 	return 0;
 }

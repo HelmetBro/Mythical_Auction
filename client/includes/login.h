@@ -19,6 +19,8 @@ public:
 	void print_username_prompt();
 	void print_password_prompt();
 
+	void clear();
+
 	int get_username();
 	int get_password();
 

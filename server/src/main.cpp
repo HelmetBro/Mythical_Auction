@@ -108,7 +108,8 @@ void * thread_work(void * arg){
     response->interpret(data);
     response->print_response();
     response->log_to_database();
-    response->handle_request();
+    response->formulate_response();//rename to formulate response
+    response->send_response();
 
     // if(!response->handle_request())
     //     //send error message to client!
@@ -125,6 +126,10 @@ void accept_client_requests(int server_socket){
 
     while ((client_socket = accept(server_socket, (struct sockaddr*)&client_addr, &sin_size)) > 0)
     {
+
+        std::cout << "SOCKET: " << client_socket << std::endl;
+
+
         Response * response = new Response();
         response->client_socket = client_socket;
         response->time_received = std::time(0);

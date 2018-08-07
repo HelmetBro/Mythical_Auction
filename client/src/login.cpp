@@ -25,8 +25,10 @@ int Login::establish_connection(const char * const host, short port){
 	if(server_socket < 0)
 		std::cout << "ERROR IN SOCKET";
 
-	if(connect(server_socket, (struct sockaddr*)&addr, sizeof addr) < 0)
+	if(connect(server_socket, (struct sockaddr*)&addr, sizeof addr) < 0){
 		std::cout << "ERROR IN STATUS";
+		exit(-1);
+	}
 
 	std::cout << "CONNECTED!" << std::endl;
 
@@ -41,8 +43,13 @@ void Login::print_username_prompt(){
 	std::cout << "Enter username: " << std::endl;
 }
 void Login::print_password_prompt(){
-	std::cout << "Enter password: " << std::endl;	
+	std::cout << "Enter password: " << std::endl;
 }
+
+void Login::clear(){
+	this->l_request.clear_credentials();
+	this->l_request.clear_data();
+} 
 
 int Login::get_username(){
 	std::string username = "pepe";
@@ -57,8 +64,8 @@ int Login::authenticate(int server_socket){
 
 	this->l_request.package_request();
 	this->l_request.print_request();
-	this->l_request.send_login_request(server_socket);
-	this->l_request.react_response();
+	this->l_request.send_request(server_socket);
+	this->l_request.receive_response(server_socket);
 
-	return 0;
+	return this->l_request.react_response();;
 }

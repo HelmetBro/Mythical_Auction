@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <unistd.h>
 
 #include "response.h"
 
@@ -15,7 +16,7 @@ int Response::interpret(char * data){
 	char * token = strtok(data, &this->DELIMITER);
 	if(token == NULL)
 		std::cout << "HOUSTON, WE GOT A PROBLEM...";
-	this->time_request_sent = token + 1; 
+	this->time_request_sent = token; 
 
 	token = strtok(NULL, &this->DELIMITER);
 	if(token == NULL)
@@ -52,13 +53,19 @@ int Response::find_string_index(){
 }
 
 //the big switch statement
-int Response::handle_request(){
+int Response::formulate_response(){
 
 	switch(find_string_index()){
 		case LOGIN:
-			//handle
-			
-			std::cout << "WE GOT THE RIGHT TYPE" << std::endl;
+
+			//handle - response stored in "response" variable
+			/*
+			to prevent attacks, use the unique ID send to encrypt "valid"
+			or "invalid" when sent to the client. have the client decrypt with
+			knowing their ID. This can be used as the key.
+			*/
+			this->response = "invalid";
+
 			break;
 
 		default:
@@ -66,9 +73,20 @@ int Response::handle_request(){
 			break;
 	}
 
+	//log response to data base
+	std::cout << "LOG RESPONSE TO DATABASE LATER" << std::endl;
+
 	return 0;
 }
 
+
+int Response::send_response(){
+	std::cout << this->response << std::endl;
+	if(write(client_socket, this->response.c_str(), response.length() + 1) < 0)
+            std::cout << "WRITE ERROR FROM CLIENT";
+
+    return 0;
+}
 
 void Response::print_response(){
 

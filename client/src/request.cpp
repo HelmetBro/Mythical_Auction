@@ -3,6 +3,7 @@
 #include <iostream>
 #include <climits>
 #include <ctime>
+#include <unistd.h>
 
 #include "request.h"
 
@@ -42,4 +43,37 @@ void Request::package_request_header(Request::REQUESTS request_type){
 	data.append(&DELIMITER);
 
 	this->request = data;
+}
+
+int Request::send_request(int server_socket){
+
+	//error check if request is nothing or null, throw an error!
+
+	std::cout << this->request << std::endl;
+	if(write(server_socket, this->request.c_str(), request.length() + 1) < 0)
+            std::cout << "WRITE ERROR FROM CLIENT";
+
+    return 0;
+}
+
+int Request::receive_response(int server_socket){
+
+	char data[BUFSIZ];
+	int n = read(server_socket, data, BUFSIZ);
+    if (n < 0)
+        std::cout << "SERVER READ ERROR";
+    data[n] = '\0';
+
+    this->response = data;
+
+	std::cout << "RETURNED FROM SERVER DATA: " << data << std::endl;
+	std::cout << "RETURNED FROM SERVER: " << this->response << std::endl;
+
+    return 0;
+}
+
+void Request::clear_data(){
+	this->ID = 0;
+	this->request.clear();
+	this->response.clear();
 }
