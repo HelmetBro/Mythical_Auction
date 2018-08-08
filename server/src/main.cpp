@@ -24,6 +24,7 @@
 const char * const IP_ADDRESS = "192.168.0.117";
 const short PORT = 51992;
 
+
 // void error(char *msg)
 // {
 //     fprintf(stderr, "ERROR: %s failed\n", msg);
@@ -128,7 +129,7 @@ void accept_client_requests(int server_socket){
     {
 
         std::cout << "SOCKET: " << client_socket << std::endl;
-
+        //add to thread-safe list of online clients
 
         Response * response = new Response();
         response->client_socket = client_socket;
