@@ -61,7 +61,7 @@ int Request::receive_response(int server_socket){
 	char data[BUFSIZ];
 	int n = read(server_socket, data, BUFSIZ);
     if (n < 0)
-        std::cout << "SERVER READ ERROR";
+        std::cout << "CLIENT RECEIVE_RESPONSE READ ERROR";
     data[n] = '\0';
 
     this->response = data;

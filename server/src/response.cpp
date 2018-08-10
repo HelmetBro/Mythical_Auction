@@ -29,19 +29,20 @@ int Response::interpret(char * data){
 		std::cout << "HOUSTON, WHAT IN THE HELL IS GOING ON?!";
 	this->request_type = token + 1;
 
-    // std::cout << "SERVER CLIENT SOCKET: " << this->client_socket << std::endl;
+    bzero(data, BUFSIZ);
     return 0;
 }
 
 
 int Response::log_to_database(){
 	std::cout << "LOG TO DATABASE FINISH LATER" << std::endl;
+	//MAKE SURE I USE A MUTEX!!!!!
 	return 0;
 }
 
 
-//helper to handle_request
-int Response::find_string_index(){
+//returns type of request in enum form
+int Response::find_request_type(){
 
 	//do more intense checking here?
 	int index = 0;
@@ -55,7 +56,7 @@ int Response::find_string_index(){
 //the big switch statement
 int Response::formulate_response(){
 
-	switch(find_string_index()){
+	switch(find_request_type()){
 		case LOGIN:
 
 			//handle - response stored in "response" variable
@@ -64,7 +65,7 @@ int Response::formulate_response(){
 			or "invalid" when sent to the client. have the client decrypt with
 			knowing their ID. This can be used as the key.
 			*/
-			this->response = "invalid";
+			this->response = "valid";
 
 			break;
 
@@ -74,7 +75,7 @@ int Response::formulate_response(){
 	}
 
 	//log response to data base
-	std::cout << "LOG RESPONSE TO DATABASE LATER" << std::endl;
+	this->log_to_database();
 
 	return 0;
 }
@@ -84,6 +85,51 @@ int Response::send_response(){
 	std::cout << this->response << std::endl;
 	if(write(client_socket, this->response.c_str(), response.length() + 1) < 0)
             std::cout << "WRITE ERROR FROM CLIENT";
+
+    return 0;
+}
+
+int Response::handle_login(char * data){
+	this->interpret(data);
+    this->print_response();
+    this->log_to_database();
+
+    //ensure that first response is always a login request
+    if(this->find_request_type() != Response::LOGIN)
+        std::cout << "HACKER HACKER HACKER!" << std::endl;
+
+    this->formulate_response();
+    this->send_response();
+
+    return 0;
+}
+
+int Response::handle_logout(){
+	return 0;
+}
+
+int Response::manage_request_chain(char * data){
+
+	int num_characters = 1; // equals 1 just to start while loop
+    while((num_characters = read(this->client_socket, data, BUFSIZ)) > 0){
+
+    	//just a little bounds checking
+    	data[num_characters] = '\0';
+        
+        this->interpret(data);
+        this->print_response();
+        this->log_to_database();
+
+        if(this->find_request_type() == Response::LOGOUT)
+            this->handle_logout();
+
+        this->formulate_response();
+        this->send_response();
+
+    }
+    
+    if(num_characters < 0)
+        std::cout << "ERROR! SERVER INVALID READ" << std::endl;
 
     return 0;
 }

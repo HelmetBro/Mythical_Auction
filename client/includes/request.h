@@ -4,7 +4,7 @@
 #include <string>
 #include <ctime>
 
-#define SIGNATURE_SIZE 1
+#define SIGNATURE_SIZE 2
 
 class Request{
 
@@ -12,7 +12,7 @@ protected:
 
 	int ID;
 	const char DELIMITER = ';';
-	const std::string signatures[SIGNATURE_SIZE] = {"login"};
+	const std::string signatures[SIGNATURE_SIZE] = {"login", "logout"};
 
 	std::time_t time_sent;
 	std::string request;
@@ -20,7 +20,7 @@ protected:
 
 public:
 
-	enum REQUESTS {LOGIN};
+	enum REQUESTS {LOGIN, LOGOUT};
 	std::string get_signature(Request::REQUESTS request_type);
 
 	int create_request_id();

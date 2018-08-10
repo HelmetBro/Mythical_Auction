@@ -25,6 +25,7 @@ const char * const IP_ADDRESS = "192.168.0.117";
 const short PORT = 51992;
 
 
+
 // void error(char *msg)
 // {
 //     fprintf(stderr, "ERROR: %s failed\n", msg);
@@ -106,15 +107,11 @@ void * thread_work(void * arg){
     char data[BUFSIZ];
     get_request_from_socket(response, data);
 
-    response->interpret(data);
-    response->print_response();
-    response->log_to_database();
-    response->formulate_response();//rename to formulate response
-    response->send_response();
+    response->handle_login(data);
+    response->manage_request_chain(data);
 
-    // if(!response->handle_request())
-    //     //send error message to client!
-
+    //ONLY DO THIS ONCE CLIENT DISCONNECTS
+    std::cout << "DISCONNECTED!" << std::endl;
     close(response->client_socket);
     delete response;
     pthread_exit(0);

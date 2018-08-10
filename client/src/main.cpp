@@ -41,6 +41,7 @@ int login(){
 
 
 	std::cout << "WE IN BOYS!" << std::endl;
+	std::cin.get(); 
 
 	return 0;
 }
