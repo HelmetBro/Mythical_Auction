@@ -55,8 +55,15 @@ int create_server_socket(short port){
 
 void get_request_from_socket(Response * response, char * data){
     int n = read(response->client_socket, data, BUFSIZ);
-    if (n < 0)
-        std::cout << "SERVER READ ERROR";
+    
+    /*
+    If there are 0 or less, the client either disconnected or
+    manage to send a corrupted request. this terminates the
+    thread so the whole server doesnt go down.
+    */
+    if (n <= 0)
+        pthread_exit(NULL);
+    
     data[n] = '\0';
 }
 

@@ -1,11 +1,10 @@
 #include <ncurses.h>
-#include <iostream>
 #include <string>
 
 #include "profile.h"
 #include "login.h"
 
-#define WINDOW_WIDTH 80
+#define WINDOW_WIDTH 125
 #define WINDOW_HEIGHT 40
 
 const char * const IP_ADDRESS = "192.168.0.117";
@@ -15,53 +14,47 @@ int server_socket;
 
 int login(){
 
-	Login login_activity;
-	login_activity.print_login();
+	Login login;
+	login.print_login();
 
 	//connect to server
-	server_socket = login_activity.establish_connection(IP_ADDRESS, PORT);
+	server_socket = login.establish_connection(IP_ADDRESS, PORT);
 
 	bool verified = false;
 
 	while (!verified){
 
-		login_activity.clear();
+		login.clear();
 
-		login_activity.print_username_prompt();
-		login_activity.get_username();
+		login.print_username_prompt();
+		login.get_username();
 	
-		login_activity.print_password_prompt();
-		login_activity.get_password();
+		login.print_password_prompt();
+		login.get_password();
 	
-		verified = !login_activity.authenticate(server_socket);
+		verified = !login.authenticate(server_socket);
 
-		if(!verified)
-			std::cout << "WRONG!" << std::endl; //print better error sometime
+		if(!verified){
+			printw("WRONG!");
+			refresh();
+		}
 	}
 
 
-	std::cout << "WE IN BOYS!" << std::endl;
-	std::cin.get(); 
-
+	printw("SUCCESS!"); //print SUCCESS! or smth
+	refresh();
+	
 	return 0;
 }
 
 int main(){ //could have argv arguments for MOD MODE
 
 	//ncurses setup
-	// initscr();
-	// cbreak();
-	// noecho();
-	// keypad(stdscr, TRUE);
-
-	// int h, w;
-   	// getmaxyx(stdscr, h, w);
-	// WINDOW * win = newwin(WINDOW_HEIGHT, WINDOW_WIDTH, 0, 0);
-
-	//make connection / check for updates
+	initscr();
+	keypad(stdscr, TRUE);	//We get F1, F2, arrow keys, etc
 	login();
-	//login
 
-	// endwin();
+	getch();//artificial delay
+	endwin();
 	return 0;
 }

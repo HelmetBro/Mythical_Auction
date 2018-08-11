@@ -7,6 +7,8 @@
 
 #include "request.h"
 
+const char Request::DELIMITER = ';';
+
 std::string Request::get_signature(Request::REQUESTS request_type){
 	return signatures[request_type];
 }
@@ -36,20 +38,17 @@ void Request::package_request_header(Request::REQUESTS request_type){
 	std::string data = time_buffer;
 	
 	//pack on information to data
-	data.append(&DELIMITER);	
+	data += DELIMITER;
 	data.append(std::to_string(this->ID)); //ID
-	data.append(&DELIMITER);
+	data += DELIMITER;
 	data.append(this->get_signature(request_type)); //SIGNATURE
-	data.append(&DELIMITER);
+	data += DELIMITER;
 
 	this->request = data;
 }
 
 int Request::send_request(int server_socket){
-
 	//error check if request is nothing or null, throw an error!
-
-	std::cout << this->request << std::endl;
 	if(write(server_socket, this->request.c_str(), request.length() + 1) < 0)
             std::cout << "WRITE ERROR FROM CLIENT";
 
@@ -65,9 +64,6 @@ int Request::receive_response(int server_socket){
     data[n] = '\0';
 
     this->response = data;
-
-	std::cout << "RETURNED FROM SERVER DATA: " << data << std::endl;
-	std::cout << "RETURNED FROM SERVER: " << this->response << std::endl;
 
     return 0;
 }

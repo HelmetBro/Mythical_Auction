@@ -11,7 +11,6 @@ class Request{
 protected:
 
 	int ID;
-	const char DELIMITER = ';';
 	const std::string signatures[SIGNATURE_SIZE] = {"login", "logout"};
 
 	std::time_t time_sent;
@@ -19,6 +18,8 @@ protected:
 	std::string response;
 
 public:
+
+	static const char DELIMITER;
 
 	enum REQUESTS {LOGIN, LOGOUT};
 	std::string get_signature(Request::REQUESTS request_type);
@@ -34,3 +35,4 @@ public:
 	void clear_data();
 };
 #endif
+

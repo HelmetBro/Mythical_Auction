@@ -21,13 +21,13 @@ int Response::interpret(char * data){
 	token = strtok(NULL, &this->DELIMITER);
 	if(token == NULL)
 		std::cout << "HOUSTON, YOU GOTTA TAKE A LOOK AT THIS-";
-	this->request_id = atoi(token + 1); //temporary fix, first char is a '\0' I think
+	this->request_id = atoi(token);
 	
 	//setting request type
 	token = strtok(NULL, &this->DELIMITER);
 	if(token == NULL)
 		std::cout << "HOUSTON, WHAT IN THE HELL IS GOING ON?!";
-	this->request_type = token + 1;
+	this->request_type = token;
 
     bzero(data, BUFSIZ);
     return 0;

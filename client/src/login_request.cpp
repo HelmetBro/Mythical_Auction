@@ -21,7 +21,7 @@ int LoginRequest::package_request(){
 	package_request_header(LOGIN);
 
 	this->request.append(this->encrypted_username); //USERNAME
-	this->request.append(&DELIMITER);
+	this->request += DELIMITER;
 	this->request.append(this->encrypted_password); //PASSWORD
 
 	return 0;
