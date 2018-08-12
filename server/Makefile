@@ -7,10 +7,10 @@ SOURCE = src
 BIN = bin
 INCLUDES = includes
 
-OBJFILES = $(BIN)/main.o $(BIN)/response.o $(BIN)/online.o 
+OBJFILES = $(BIN)/main.o $(BIN)/response.o $(BIN)/online.o $(BIN)/disk_io.o
 INCLUDES_FLAG = -I$(DIR)/includes
 
-all: main response online
+all: main response online disk_io
 	$(CC) $(INCLUDES_FLAG) $(CFLAGS) -pthread $(OBJFILES) -o server
 
 main: $(SOURCE)/main.cpp
@@ -21,6 +21,10 @@ response: $(INCLUDES)/response.h $(SOURCE)/response.cpp
 
 online: $(INCLUDES)/online.h $(SOURCE)/online.cpp
 	$(CC) $(INCLUDES_FLAG) $(CFLAGS) -c $(SOURCE)/online.cpp -o $(BIN)/online.o
+
+disk_io: $(INCLUDES)/disk_io.h $(SOURCE)/disk_io.cpp
+	$(CC) $(INCLUDES_FLAG) $(CFLAGS) -c $(SOURCE)/disk_io.cpp -o $(BIN)/disk_io.o
+
 
 clean:
 	rm -rf $(OBJFILES)
