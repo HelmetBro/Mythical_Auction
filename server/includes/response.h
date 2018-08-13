@@ -13,13 +13,14 @@ private:
 
 	int request_id;
 	std::string request_type;
-
 	std::string response;
 
 public:
 
 	const char DELIMITER = ';';
 	int client_socket;
+
+	std::string request_data;
 
 	enum REQUESTS {LOGIN, LOGOUT};
 

@@ -9,7 +9,6 @@ int Response::interpret(char * data){
 	/* Parse request data.
 		Always going to be: time;ID;type;etc.
 	*/
-
 	std::cout << data << std::endl;
 
 	//setting time when request was sent
@@ -28,6 +27,11 @@ int Response::interpret(char * data){
 	if(token == NULL)
 		std::cout << "HOUSTON, WHAT IN THE HELL IS GOING ON?!";
 	this->request_type = token;
+
+	token = strtok(NULL, "");
+	if(token == NULL)
+		std::cout << "DUES VULT";
+	this->request_data = token;
 
     bzero(data, BUFSIZ);
     return 0;
@@ -65,6 +69,13 @@ int Response::formulate_response(){
 			or "invalid" when sent to the client. have the client decrypt with
 			knowing their ID. This can be used as the key.
 			*/
+
+
+			// Login login();
+
+
+
+			// Disk_IO::match_cred_file()
 			this->response = "valid";
 
 			break;

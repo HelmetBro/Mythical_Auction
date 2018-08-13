@@ -17,6 +17,8 @@ private:
 	int * ONLINE;
 	int size;
 	int	last = 0;	// index of last element in queue
+
+	//THIS LOCK NEEDS TO BE STATIC! CHANGE IN FUTURE
 	pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;	// mutual exclusion lock
 
 public:

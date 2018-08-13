@@ -3,27 +3,45 @@
 
 #include <string>
 
+
+/*
+Later in development, replace all connections with OpenSSL
+and do actual encryption.
+*/
+
 class Disk_IO{
 
 private:
 
-	const int MAX_FILE_SIZE = 2000000; //20MB /*NOT IN USE AT THE MOMENT*/
+	static const int MAX_FILE_SIZE = 2000000; //20MB /*NOT IN USE AT THE MOMENT*/
 
-	std::string request_history = "request_history.txt";
-	std::string credentials = "credentials.txt";
+	static const std::string resource_path;
+	static std::string request_history;
+	static std::string credentials;
 
-	pthread_mutex_t reqh_mutex = PTHREAD_MUTEX_INITIALIZER;
-	pthread_mutex_t cred_mutex = PTHREAD_MUTEX_INITIALIZER;
+	static pthread_mutex_t reqh_mutex;
+	static pthread_mutex_t cred_mutex;
 
-	int write_to_file(std::string file_name, char * contents);
+	static int write_to_file(std::string file_name, char * contents);
 
 public:
 
-	int write_cred_file(char * contents);
-	int write_reqh_file(char * contents);
+	static int write_cred_file(char * contents);
+	static int write_reqh_file(char * contents);
+
+	//reads file and searches for credentials
+	static int match_cred_file(std::string username, std::string password);
 
 	int file_size(const char * file_name);
 
 };
+
+pthread_mutex_t reqh_mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t cred_mutex = PTHREAD_MUTEX_INITIALIZER;
+
+const std::string resource_path = "resources/";
+std::string request_history = resource_path + "request_history.txt";
+std::string credentials = resource_path + "credentials.txt";
+
 #endif
 
