@@ -16,8 +16,8 @@ private:
 	static const int MAX_FILE_SIZE = 2000000; //20MB /*NOT IN USE AT THE MOMENT*/
 
 	static const std::string resource_path;
-	static std::string request_history;
-	static std::string credentials;
+	static const std::string request_history;
+	static const std::string credentials;
 
 	static pthread_mutex_t reqh_mutex;
 	static pthread_mutex_t cred_mutex;
@@ -36,12 +36,12 @@ public:
 
 };
 
-pthread_mutex_t reqh_mutex = PTHREAD_MUTEX_INITIALIZER;
-pthread_mutex_t cred_mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t Disk_IO::reqh_mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t Disk_IO::cred_mutex = PTHREAD_MUTEX_INITIALIZER;
 
-const std::string resource_path = "resources/";
-std::string request_history = resource_path + "request_history.txt";
-std::string credentials = resource_path + "credentials.txt";
+const std::string Disk_IO::resource_path = "resources/";
+const std::string Disk_IO::request_history = resource_path + "request_history.txt";
+const std::string Disk_IO::credentials = resource_path + "credentials.txt";
 
 #endif
 

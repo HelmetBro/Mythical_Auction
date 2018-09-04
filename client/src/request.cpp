@@ -37,19 +37,14 @@ void Request::package_request_header(Request::REQUESTS request_type){
 	strftime(time_buffer, sizeof time_buffer, "%Y-%m-%d %H:%M:%S", &tstruct);
 	std::string data = time_buffer;
 	
-	//pack on information to data
-	data += DELIMITER;
-	data.append(std::to_string(this->ID)); //ID
-	data += DELIMITER;
-	data.append(this->get_signature(request_type)); //SIGNATURE
-	data += DELIMITER;
+	this->j["ID"] = this->ID;
+	this->j["time_sent"] = time_buffer;
 
-	this->request = data;
 }
 
 int Request::send_request(int server_socket){
 	//error check if request is nothing or null, throw an error!
-	if(write(server_socket, this->request.c_str(), request.length() + 1) < 0)
+	if(write(server_socket, this->j.dump().c_str(), this->j.size()) < 0)
             std::cout << "WRITE ERROR FROM CLIENT";
 
     return 0;
@@ -70,6 +65,5 @@ int Request::receive_response(int server_socket){
 
 void Request::clear_data(){
 	this->ID = 0;
-	this->request.clear();
-	this->response.clear();
+	this->j.clear();
 }

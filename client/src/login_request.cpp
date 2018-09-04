@@ -20,9 +20,8 @@ int LoginRequest::package_request(){
 
 	package_request_header(LOGIN);
 
-	this->request.append(this->encrypted_username); //USERNAME
-	this->request += DELIMITER;
-	this->request.append(this->encrypted_password); //PASSWORD
+	this->j["username"] = this->encrypted_username;
+	this->j["password"] = this->encrypted_password;
 
 	return 0;
 }
@@ -46,5 +45,5 @@ void LoginRequest::clear_credentials(){
 void LoginRequest::print_request(){
 
 	std::cout << "REQUEST > ID: " << this->ID << std::endl 
-			  << "        > data: " << this->request << std::endl;
+			  << "data:\n" << this->j.dump(4) << std::endl;
 }

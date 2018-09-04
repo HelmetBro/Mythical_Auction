@@ -3,19 +3,22 @@
 
 #include <string>
 #include <ctime>
+#include <json.hpp>
 
 #define SIGNATURE_SIZE 2
+
+using json = nlohmann::json;
 
 class Request{
 
 protected:
 
 	int ID;
+	std::time_t time_sent;
+	
 	const std::string signatures[SIGNATURE_SIZE] = {"login", "logout"};
 
-	std::time_t time_sent;
-	std::string request;
-	std::string response;
+	json j;
 
 public:
 
