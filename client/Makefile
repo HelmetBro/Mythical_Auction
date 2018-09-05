@@ -11,7 +11,7 @@ OBJFILES = $(BIN)/main.o $(BIN)/login.o $(BIN)/request.o $(BIN)/response.o $(BIN
 			$(BIN)/login_response.o
 INCLUDES_DIR = -I$(DIR)/includes -I$(DIR)/api
 
-all: main login request login_request
+all: main login request response login_request login_response
 	$(CC) $(INCLUDES_DIR) $(CFLAGS) $(OBJFILES) -o client -lncurses
 
 main: $(SOURCE)/main.cpp

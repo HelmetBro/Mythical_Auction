@@ -30,9 +30,9 @@ int LoginRequest::react_response(){
 	
 	//use ID and response to get the string (authenticate)
 
-	if(this->response == "valid"){
-		return 0; // 0 is VALID
-	}
+	// if(this->response == "valid"){
+	// 	return 0; // 0 is VALID
+	// }
 
 	//return an error code here! 
 }

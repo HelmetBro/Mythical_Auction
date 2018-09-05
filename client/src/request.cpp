@@ -7,8 +7,6 @@
 
 #include "request.h"
 
-const char Request::DELIMITER = ';';
-
 std::string Request::get_signature(Request::REQUESTS request_type){
 	return signatures[request_type];
 }
@@ -46,19 +44,6 @@ int Request::send_request(int server_socket){
 	//error check if request is nothing or null, throw an error!
 	if(write(server_socket, this->j.dump().c_str(), this->j.size()) < 0)
             std::cout << "WRITE ERROR FROM CLIENT";
-
-    return 0;
-}
-
-int Request::receive_response(int server_socket){
-
-	char data[BUFSIZ];
-	int n = read(server_socket, data, BUFSIZ);
-    if (n < 0)
-        std::cout << "CLIENT RECEIVE_RESPONSE READ ERROR";
-    data[n] = '\0';
-
-    this->response = data;
 
     return 0;
 }

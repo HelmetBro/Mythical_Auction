@@ -1,13 +1,22 @@
 #ifndef LOGIN_RESPONSE_H
 #define LOGIN_RESPONSE_H
 
-#include "login_response.h"
+#include <string>
+#include <json.hpp>
 
-class LoginResponse {
+using json = nlohmann::json;
+
+#include "response.h"
+
+class LoginResponse : public Response {
 
 private:
 
+	std::string result; //invalid, valid, or neither
+
 public:
+
+	int determine_response();
 
 };
 #endif

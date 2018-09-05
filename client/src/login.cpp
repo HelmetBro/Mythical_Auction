@@ -64,50 +64,9 @@ void Login::clear(){
 
 int Login::get_username(){
 	echo();
-	//check for valid username input
 	char username[MAX_INPUT_CHAR];
-	bool valid;
-	do{
-
-		//used for erasing after invalid input
-		int row, col;
-		getyx(stdscr, row, col);
-
-		valid = true;
-
-		bzero(username, MAX_INPUT_CHAR);
-		getnstr(username, MAX_INPUT_CHAR);
-
-		int length = strlen(username);
-		//checks if it contains delemiter
-		for(int i = 0; i < length; i++)
-			if(!isalnum(username[i]) 
-				&& username[i] != '_'
-				&& username[i] != '!'
-				&& username[i] != '$'
-				&& username[i] != '@'	//username acceptable characters
-				&& username[i] != '#'	//there's a much better way to do this...
-				&& username[i] != '('
-				&& username[i] != ')'
-				&& username[i] != '~'
-				&& username[i] != ':'
-				&& username[i] != '|'
-				&& username[i] != '\''
-				&& username[i] != '?'
-				&& username[i] != '>'
-				&& username[i] != '<'
-				&& username[i] != '/'
-				&& username[i] != '\\')
-				valid = false;
-
-		if(!valid){
-			move(row, col);
-			clrtoeol(); //erases line right (inclusive) or cursor
-			//prints ILLEGAL USERNAME
-		}
-
-	}while(!valid);
-
+	bzero(username, MAX_INPUT_CHAR);
+	getnstr(username, MAX_INPUT_CHAR);
 	noecho();
 	return l_request.set_username(std::string(username));
 }
@@ -121,6 +80,9 @@ int Login::get_password(){
 int Login::authenticate(int server_socket){
 	this->l_request.package_request();
 	this->l_request.send_request(server_socket);
-	this->l_request.receive_response(server_socket);
-	return this->l_request.react_response();;
+
+	char data[BUFSIZ];
+	this->l_response.wait_response(data, server_socket);
+
+	return this->l_response.determine_response();
 }

@@ -2,12 +2,14 @@
 #define LOGIN_H
 
 #include "login_request.h"
+#include "login_response.h"
 
 class Login {
 
 private:
 
 	LoginRequest l_request;
+	LoginResponse l_response;
 
 public:
 

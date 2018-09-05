@@ -22,8 +22,6 @@ protected:
 
 public:
 
-	static const char DELIMITER;
-
 	enum REQUESTS {LOGIN, LOGOUT};
 	std::string get_signature(Request::REQUESTS request_type);
 
@@ -33,7 +31,7 @@ public:
 	virtual void print_request() = 0;
 
 	int send_request(int server_socket);
-	int receive_response(int server_socket);
+	// int receive_response(int server_socket);
 
 	void clear_data();
 };

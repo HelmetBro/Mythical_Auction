@@ -20,7 +20,7 @@ public:
 	void clear_credentials();
 
 	int package_request();
-	int react_response();
+	int react_response(); // should be in login
 	void print_request();
 
 };
